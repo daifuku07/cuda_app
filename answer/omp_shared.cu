@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-static const int N = 2048;
+static const int N = 1024;
 static const int BLOCK = 16;
 
 double cpuSecond();

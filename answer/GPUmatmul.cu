@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-const int N = 2048; // 正方行列のサイズを指定（N×N）
+const int N = 1024; // 正方行列のサイズを指定（N×N）
 const int BLOCK = 16; // ブロックのサイズを指定
 
 double cpuSecond();
