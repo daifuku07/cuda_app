@@ -1,0 +1,19 @@
+## 下のコマンドによって、answerディレクトリをの実行ファイルを生成可能 ##
+$ cd answer
+$ make
+# 実行
+# ナイーブなGPU実装
+$ ./GPUmatmul
+# シェアードメモリ利用したGPU実装
+$ ./GPUmatmul_shared
+# OpenMPによりCPUも並列化
+$ ./omp_shared
+
+## 演習で自ら穴埋め
+# ナイーブなコードの作成
+$ cp GPUmatmul_org.cu ./GPUmatmul.cu
+# シェアードメモリの利用コードの作成
+$ cp GPUmatmul_org.cu ./GPUmatmul_shared.cu
+
+## コンパイル(abc.cu -> abcという実行ファイルを生成)
+$ nvcc -arch sm_20 -o abc abc.cu
